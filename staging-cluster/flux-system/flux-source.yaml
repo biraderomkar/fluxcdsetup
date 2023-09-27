@@ -16,7 +16,7 @@ spec:
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: kubernetes_sot
+  name: bitbucket-azuredevops-migrate
   namespace: flux-system
 spec:
   interval: 1m0s
@@ -24,4 +24,4 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/biraderomkar/kubernetes_sot.git
+  url: ssh://git@github.com/biraderomkar/bitbucket-azuredevops-migrate.git
